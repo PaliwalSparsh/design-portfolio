@@ -2,17 +2,15 @@ import Link from "next/link";
 
 function Header() {
   return (
-    <header className="mt-28 text-gray-400 body-font">
-      <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-        <Link href="/">
-          <a className="mb-4 md:mb-0 text-2xl text-white font-bold">Sparsh Paliwal</a>
-        </Link>
-        <nav className="md:ml-auto flex flex-wrap items-center text-base justify-center">
-          <a className="mr-5 hover:text-white">First Link</a>
-          <a className="mr-5 hover:text-white">Second Link</a>
-          <a className="mr-5 hover:text-white">Third Link</a>{" "}
-        </nav>
-      </div>
+    <header className="w-full mt-28 flex flex-wrap flex-col items-center md:flex-row md:content-between">
+      <Link href="/">
+        <a className="mb-4 md:mb-0 text-2xl text-white font-bold">Sparsh Paliwal</a>
+      </Link>
+      <nav className="md:ml-auto flex flex-wrap items-center text-base justify-center text-gray-400">
+        <a className="mr-5 hover:text-white">Mains</a>
+        <a className="mr-5 hover:text-white">Sides</a>
+        <a className="hover:text-white">About</a>
+      </nav>
     </header>
   );
 }
