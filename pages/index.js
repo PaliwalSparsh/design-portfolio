@@ -4,160 +4,73 @@ function Container() {
   return (
     <div>
       <Introduction />
-      {/* <Projects />
-      <About /> */}
+      <Projects />
+      {/* <About /> */}
     </div>
   );
 }
 
 function Introduction() {
   return (
-    <h1 className="mt-20 md:mt-80 w-full text-center md:text-left text-2xl md:text-4xl title-font text-white">
-      <span className="font-bold">Hi, I am Sparsh</span>, a{" "}
-      <span className="font-bold">Product Designer</span> who loves to solve{" "}
-      <span className="font-serif font-bold italic text-red-500 underline decoration-4 decoration-red-500">
-        design
-      </span>{" "}
-      problems,{" "}
-      <span className="font-serif font-bold italic text-amber-500 underline decoration-4 decoration-amber-500">
-        prototype
-      </span>{" "}
-      and{" "}
-      <span className="font-serif font-bold italic text-blue-500 underline decoration-4 decoration-blue-500">
-        code
-      </span>
-      .
-    </h1>
+    <>
+      <h1 className="mt-20 md:mt-80 text-center md:text-left text-2xl md:text-4xl title-font text-white">
+        <span className="font-bold">Hi, I am Sparsh</span>, a{" "}
+        <span className="font-bold">Product Designer</span> who loves to solve{" "}
+        <span className="font-serif font-bold italic text-red-500 underline decoration-4 decoration-red-500">
+          design
+        </span>{" "}
+        problems,{" "}
+        <span className="font-serif font-bold italic text-amber-500 underline decoration-4 decoration-amber-500">
+          prototype
+        </span>{" "}
+        and{" "}
+        <span className="font-serif font-bold italic text-blue-500 underline decoration-4 decoration-blue-500">
+          code
+        </span>
+        .
+      </h1>
+      <div className="mt-8 text-center md:text-left text-white">
+        Studying Human-Computer Interaction at University of Maryland, College Park.
+      </div>
+      <div className="mt-1 text-center md:text-left text-neutral-500">
+        Previously, a Senior UI developer @Trusting Social and @Pharmeasy with 2.5 years of
+        experience.
+      </div>
+    </>
   );
 }
 
-// function Content() {
-//   return (
-//     <section className="text-gray-600 body-font">
-//       <div className="container px-5 py-24 mx-auto">
-//         <div className="flex flex-wrap -m-4">
-//           <div className="lg:w-full sm:w-1/2 p-4">
-//             <div className="flex relative">
-//               <img
-//                 alt="gallery"
-//                 className="absolute inset-0 w-full h-full object-cover object-center"
-//                 src="https://dummyimage.com/600x360"
-//               />
-//               <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
-//                 <h2 className="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">
-//                   THE SUBTITLE
-//                 </h2>
-//                 <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
-//                   Shooting Stars
-//                 </h1>
-//                 <p className="leading-relaxed">
-//                   Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing
-//                   tousled waistcoat.
-//                 </p>
-//               </div>
-//             </div>
-//           </div>
-//           <div className="lg:w-1/3 sm:w-1/2 p-4">
-//             <div className="flex relative">
-//               <img
-//                 alt="gallery"
-//                 className="absolute inset-0 w-full h-full object-cover object-center"
-//                 src="https://dummyimage.com/601x361"
-//               />
-//               <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
-//                 <h2 className="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">
-//                   THE SUBTITLE
-//                 </h2>
-//                 <h1 className="title-font text-lg font-medium text-gray-900 mb-3">The Catalyzer</h1>
-//                 <p className="leading-relaxed">
-//                   Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing
-//                   tousled waistcoat.
-//                 </p>
-//               </div>
-//             </div>
-//           </div>
-//           <div className="lg:w-1/3 sm:w-1/2 p-4">
-//             <div className="flex relative">
-//               <img
-//                 alt="gallery"
-//                 className="absolute inset-0 w-full h-full object-cover object-center"
-//                 src="https://dummyimage.com/603x363"
-//               />
-//               <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
-//                 <h2 className="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">
-//                   THE SUBTITLE
-//                 </h2>
-//                 <h1 className="title-font text-lg font-medium text-gray-900 mb-3">The 400 Blows</h1>
-//                 <p className="leading-relaxed">
-//                   Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing
-//                   tousled waistcoat.
-//                 </p>
-//               </div>
-//             </div>
-//           </div>
-//           <div className="lg:w-1/3 sm:w-1/2 p-4">
-//             <div className="flex relative">
-//               <img
-//                 alt="gallery"
-//                 className="absolute inset-0 w-full h-full object-cover object-center"
-//                 src="https://dummyimage.com/602x362"
-//               />
-//               <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
-//                 <h2 className="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">
-//                   THE SUBTITLE
-//                 </h2>
-//                 <h1 className="title-font text-lg font-medium text-gray-900 mb-3">Neptune</h1>
-//                 <p className="leading-relaxed">
-//                   Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing
-//                   tousled waistcoat.
-//                 </p>
-//               </div>
-//             </div>
-//           </div>
-//           <div className="lg:w-1/3 sm:w-1/2 p-4">
-//             <div className="flex relative">
-//               <img
-//                 alt="gallery"
-//                 className="absolute inset-0 w-full h-full object-cover object-center"
-//                 src="https://dummyimage.com/605x365"
-//               />
-//               <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
-//                 <h2 className="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">
-//                   THE SUBTITLE
-//                 </h2>
-//                 <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
-//                   Holden Caulfield
-//                 </h1>
-//                 <p className="leading-relaxed">
-//                   Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing
-//                   tousled waistcoat.
-//                 </p>
-//               </div>
-//             </div>
-//           </div>
-//           <div className="lg:w-1/3 sm:w-1/2 p-4">
-//             <div className="flex relative">
-//               <img
-//                 alt="gallery"
-//                 className="absolute inset-0 w-full h-full object-cover object-center"
-//                 src="https://dummyimage.com/606x366"
-//               />
-//               <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
-//                 <h2 className="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">
-//                   THE SUBTITLE
-//                 </h2>
-//                 <h1 className="title-font text-lg font-medium text-gray-900 mb-3">Alper Kamu</h1>
-//                 <p className="leading-relaxed">
-//                   Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing
-//                   tousled waistcoat.
-//                 </p>
-//               </div>
-//             </div>
-//           </div>
-//         </div>
-//       </div>
-//     </section>
-//   );
-// }
+function Projects() {
+  return (
+    <>
+      <h2 className="mt-44 text-center md:text-left text-2xl md:text-4xl text-white font-serif">
+        Projects
+      </h2>
+      <div className="mt-6 flex flex-wrap flex-row">
+        <Project
+          title="Sketchbook"
+          org="Pharmeasy"
+          orgColor="red-500"
+          year="2020"
+          description="A tool to help designers and developers create and share interactive prototypes."
+        />
+      </div>
+    </>
+  );
+}
+
+function Project(props) {
+  return (
+    <div className="md:w-1/3">
+      <div className="text-xl font-bold text-white">{props.title}</div>
+      <div className="text-base">
+        <span className={`text-${props.orgColor}`}>{props.org}</span>
+        <span className="text-neutral-500">–{props.year}</span>
+      </div>
+      <div className="mt-2 md:mt-4 bg-neutral-900 rounded-2xl w-80 h-80"></div>
+      <div className="mt-2 md:mt-4 text-base text-neutral-500 leading-5">{props.description}</div>
+    </div>
+  );
+}
 
 export default Container;
