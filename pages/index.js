@@ -1,11 +1,12 @@
 import Image from "next/image";
+import ProjectCard from "../components/ProjectCard";
 
 function Container() {
   return (
     <div>
       <Introduction />
       <Projects />
-      {/* <About /> */}
+      <About />
     </div>
   );
 }
@@ -46,70 +47,79 @@ function Projects() {
       <h2 className="mt-44 text-center md:text-left text-2xl md:text-4xl text-white font-serif">
         Projects
       </h2>
-      <div className="mt-6 flex flex-wrap flex-row">
-        <Project
+      <div className="w-full mt-6 flex flex-wrap flex-row justify-between md:justify-around lg:justify-between">
+        <ProjectCard
           title="FormA11y"
           org="Adobe Research"
-          orgColor="red-500"
+          orgColor="text-red-500"
           year="WIP"
           imageSrc="/sketchbook.png"
           imageAlt="/sketchbook.png"
           description="A tool to help designers and developers create and share interactive prototypes."
         />
-        <Project
-          title="Game for Discovery of Preferences"
+        <ProjectCard
+          title="Game for Preferences Discovery"
           org="Google Summer of Code"
-          orgColor="amber-500"
+          orgColor="text-amber-500"
           year="2016"
           imageSrc="/sketchbook.png"
           imageAlt="/sketchbook.png"
           description="A tool to help designers and developers create and share interactive prototypes."
         />
-        <Project
+        <ProjectCard
           title="Music Through the Pandemic"
           org="Data Visualisation Course"
-          orgColor="purple-500"
+          orgColor="text-purple-500"
           year="2021"
           imageSrc="/sketchbook.png"
           imageAlt="/sketchbook.png"
           description="A tool to help designers and developers create and share interactive prototypes."
         />
-        <Project
+        <ProjectCard
           title="Component Library"
           org="Interaction Design Course"
-          orgColor="purple-500"
+          orgColor="text-purple-500"
           year="2016"
           imageSrc="/sketchbook.png"
           imageAlt="/sketchbook.png"
           description="A tool to help designers and developers create and share interactive prototypes."
         />
-        <Project
+        <ProjectCard
           title="VR for Education"
           org="Final Year Project"
-          orgColor="purple-500"
+          orgColor="text-purple-500"
           year="2016"
           imageSrc="/sketchbook.png"
           imageAlt="/sketchbook.png"
           description="A tool to help designers and developers create and share interactive prototypes."
         />
+        <div className="h-1 w-80"></div>
       </div>
     </>
   );
 }
 
-function Project(props) {
+function About() {
   return (
-    <div className="mt-16 w-full md:w-1/3">
-      <div className="text-xl font-bold text-white">{props.title}</div>
-      <div className="text-base">
-        <span className={`text-${props.orgColor}`}>{props.org}</span>
-        <span className="text-neutral-500">–{props.year}</span>
+    <>
+      <h2 className="mt-44 text-center md:text-left text-2xl md:text-4xl text-white font-serif">
+        About
+      </h2>
+      <div className="w-full mt-6 flex flex-wrap flex-row justify-between">
+        <div className="text-white md:w-2/3">
+          ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum. Lorem ipsum Lorem ipsum Lorem
+          ipsum. Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum.Lorem ipsum Lorem ipsum
+          Lorem ipsum. Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum.Lorem ipsum Lorem
+          ipsum Lorem ipsum. Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum.Lorem ipsum
+          Lorem ipsum Lorem ipsum. Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum.Lorem
+          ipsum Lorem ipsum Lorem ipsum. Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem
+          ipsum.Lorem ipsum Lorem ipsum Lorem ipsum. Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+          Lorem ipsum.Lorem ipsum Lorem ipsum Lorem ipsum.Lorem ipsum Lorem ipsum Lorem ipsum Lorem
+          ipsum Lorem ipsum.Lorem ipsum Lorem ipsum Lorem ipsum.
+        </div>
+        <div className="bg-neutral-900 rounded-2xl md:w-80 md:h-80"></div>
       </div>
-      <div className="mt-2 md:mt-4 bg-neutral-900 rounded-2xl md:w-80 h-80">
-        {/* <Image src={props.imageSrc} alt={props.imageAlt} width={240} height={240} /> */}
-      </div>
-      <div className="mt-2 md:mt-4 text-base text-neutral-500 leading-5">{props.description}</div>
-    </div>
+    </>
   );
 }
 
