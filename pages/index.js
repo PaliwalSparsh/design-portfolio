@@ -4,40 +4,60 @@ import ProjectCard from "../components/ProjectCard";
 function Container() {
   return (
     <div>
-      <Introduction />
-      <Projects />
-      <About />
+      <div className="w-full bg-white">
+        <div className="max-w-7xl p-6 pt-0 md:p-16 md:pt-0 m-auto">
+          <HeroComponent />
+        </div>
+      </div>
+      <div className="w-full bg-black m-auto">
+        <div className="max-w-7xl p-6 pt-0 md:p-16 md:pt-0">
+          {/* <Projects />
+      <About /> */}
+        </div>
+      </div>
     </div>
   );
 }
 
-function Introduction() {
+function HeroComponent() {
   return (
-    <>
-      <h1 className="mt-20 md:mt-80 text-center md:text-left text-2xl md:text-4xl title-font text-white">
-        <span className="font-bold">Hi, I am Sparsh</span>, a{" "}
-        <span className="font-bold">Product Designer</span> who loves to solve{" "}
-        <span className="font-serif font-bold italic text-red-500 underline decoration-4 decoration-red-500">
-          design
-        </span>{" "}
-        problems,{" "}
-        <span className="font-serif font-bold italic text-amber-500 underline decoration-4 decoration-amber-500">
-          prototype
-        </span>{" "}
-        and{" "}
-        <span className="font-serif font-bold italic text-blue-500 underline decoration-4 decoration-blue-500">
-          code
-        </span>
-        .
-      </h1>
-      <div className="mt-8 text-center md:text-left text-white">
-        Studying Human-Computer Interaction at University of Maryland, College Park.
+    <div className="w-full flex flex-wrap flex-row">
+      <div className="w-full mt-24">
+        <Image src="/logo.svg" alt="" width={60} height={60} />
       </div>
-      <div className="mt-1 text-center md:text-left text-neutral-500">
-        Previously, a Senior UI developer @Trusting Social and @Pharmeasy with 2.5 years of
-        experience.
+      <div className="w-full xl:w-1/2 mt-20 xl:mt-80 ">
+        <h1 className="text-center xl:text-left text-3xl leading-9">
+          Hi, I am Sparsh, a{" "}
+          <span className="font-bold underline decoration-4 underline-offset-4 decoration-amber-400">
+            Product Designer
+          </span>{" "}
+          with <b>technical prowess.</b>
+        </h1>
+
+        <div className="mt-2 text-center xl:text-left">
+          Currently, a HCI Student at University of Maryland, College Park.
+        </div>
+        <div className="text-center xl:text-left text-neutral-500">
+          Previously, a Senior UI developer with 2.5 years of experience.
+        </div>
       </div>
-    </>
+
+      <div className="w-full mt-20 xl:mt-0 xl:w-1/2">
+        <div className="relative">
+          <div className="image-wrapper text-xl font-bold -rotate-[20deg] absolute z-10 top-20 left-5">
+            Ingredients for crafting delicious products.
+          </div>
+          <div className="w-2/3 m-auto xl:w-full image-wrapper">
+            <Image
+              src="/jars.png"
+              alt="two jars with containing design and tech tool icons"
+              layout="fill"
+              className="image"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
   );
 }
 
