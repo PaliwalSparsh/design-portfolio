@@ -23,8 +23,3 @@ function ProjectCard(props) {
 }
 
 export default ProjectCard;
-
-// 1. Responsive
-// 2. Floating icons
-// 3. Linking pages
-// 4. Think of a way to do layout and spacing

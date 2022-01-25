@@ -104,7 +104,8 @@ function Projects() {
           link="/"
           org="Interaction Design Course"
           year="2016"
-          imageStyle={isTablet ? { width: "35%" } : { width: "50%" }}
+          // imageStyle={isTablet ? { width: "35%" } : { width: "50%" }}
+          imageStyle={{width: "50%"}}
           imageSrc="/studySpace.png"
           imageAlt="A phone with app opened in it."
           description="A tool to help designers and developers create and share interactive prototypes."
@@ -114,7 +115,8 @@ function Projects() {
           link="/"
           org="Final Year Project"
           year="2016"
-          imageStyle={isTablet ? { width: "50%" } : { width: "100%" }}
+          // imageStyle={isTablet ? { width: "50%" } : { width: "100%" }}
+          imageStyle={{width: "100%"}}
           imageSrc="/vr.png"
           imageAlt="Cardboard VR headset showing users MRI machine."
           description="A tool to help designers and developers create and share interactive prototypes."
@@ -204,10 +206,8 @@ function About() {
 function LinkComponent({ title, description, link, properties }) {
   return (
     <div className="w-full mt-8 xl:mt-0 sm:w-6/12 xl:w-4/12 xl:pt-6" style={properties}>
-      <a href={link}>
-        <div className="text-lg xl:text-xl font-bold hover:underline decoration-4 underline-offset-4 decoration-[#ffd60A]">
+      <a href={link} className="text-lg xl:text-xl font-bold hover:underline decoration-4 underline-offset-4 decoration-[#ffd60A]">
           {title}
-        </div>
       </a>
       <div className="w-full mt-1 sm:w-4/5">{description}</div>
     </div>

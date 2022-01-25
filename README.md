@@ -1,3 +1,10 @@
+Things to do -
+1. Fix issue with sizing of VR and StudySpace.
+2. Floating icons.
+3. Create a shell script to created linked website.
+4. Make components more modular.
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
