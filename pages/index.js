@@ -72,40 +72,40 @@ function Projects() {
           title="FormA11y"
           org="Adobe Research"
           year="WIP"
-          imageSrc="/sketchbook.png"
-          imageAlt="/sketchbook.png"
+          imageSrc="/formA11y.png"
+          imageAlt="A laptop with tool window opened in it."
           description="A tool to help designers and developers create and share interactive prototypes."
         />
         <ProjectCard
           title="Game for Preferences Discovery"
           org="Google Summer of Code"
           year="2016"
-          imageSrc="/sketchbook.png"
-          imageAlt="/sketchbook.png"
+          imageSrc="/discoveryCat.png"
+          imageAlt="A laptop with game window opened in it."
           description="A tool to help designers and developers create and share interactive prototypes."
         />
         <ProjectCard
           title="Music Through the Pandemic"
           org="Data Visualisation Course"
           year="2021"
-          imageSrc="/sketchbook.png"
-          imageAlt="/sketchbook.png"
+          imageSrc="/musicPandemic.png"
+          imageAlt="An iPad with game window opened in it."
           description="A tool to help designers and developers create and share interactive prototypes."
         />
         <ProjectCard
           title="Component Library"
           org="Interaction Design Course"
           year="2016"
-          imageSrc="/sketchbook.png"
-          imageAlt="/sketchbook.png"
+          imageSrc="/studySpace.png"
+          imageAlt="A phone with app opened in it."
           description="A tool to help designers and developers create and share interactive prototypes."
         />
         <ProjectCard
           title="VR for Education"
           org="Final Year Project"
           year="2016"
-          imageSrc="/sketchbook.png"
-          imageAlt="/sketchbook.png"
+          imageSrc="/vr.png"
+          imageAlt="Cardboard VR headset showing users MRI machine."
           description="A tool to help designers and developers create and share interactive prototypes."
         />
         <div className="h-1 w-80"></div>
