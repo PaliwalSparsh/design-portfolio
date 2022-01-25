@@ -3,19 +3,19 @@ import ProjectCard from "../components/ProjectCard";
 
 function Container() {
   return (
-    <div>
+    <>
       <div className="w-full bg-white">
-        <div className="max-w-7xl p-6 pt-0 md:p-16 md:pt-0 m-auto">
+        <div className="max-w-7xl p-6 pt-0 xl:p-16 xl:pt-0 m-auto">
           <HeroComponent />
         </div>
       </div>
       <div className="w-full bg-black m-auto">
-        <div className="max-w-7xl p-6 pt-0 md:p-16 md:pt-0">
-          {/* <Projects />
-      <About /> */}
+        <div className="max-w-7xl p-6 pt-0 xl:p-16 xl:pt-0 m-auto">
+          <Projects />
         </div>
+        {/* <About /> */}
       </div>
-    </div>
+    </>
   );
 }
 
@@ -25,10 +25,10 @@ function HeroComponent() {
       <div className="w-full mt-24">
         <Image src="/logo.svg" alt="" width={60} height={60} />
       </div>
-      <div className="w-full xl:w-1/2 mt-20 xl:mt-80 ">
+      <div className="w-full xl:w-1/2 mt-20 xl:mt-[22rem] ">
         <h1 className="text-center xl:text-left text-3xl leading-9">
           Hi, I am Sparsh, a{" "}
-          <span className="font-bold underline decoration-4 underline-offset-4 decoration-amber-400">
+          <span className="font-bold underline decoration-4 underline-offset-4 decoration-[#ffd60A]">
             Product Designer
           </span>{" "}
           with <b>technical prowess.</b>
@@ -64,14 +64,13 @@ function HeroComponent() {
 function Projects() {
   return (
     <>
-      <h2 className="mt-44 text-center md:text-left text-2xl md:text-4xl text-white font-serif">
-        Projects
+      <h2 className="pt-20 text-center xl:text-left text-2xl xl:text-4xl text-white font-serif">
+        🥘 Projects
       </h2>
-      <div className="w-full mt-6 flex flex-wrap flex-row">
+      <div className="w-full mt-12 flex flex-wrap flex-row">
         <ProjectCard
           title="FormA11y"
           org="Adobe Research"
-          orgColor="text-red-500"
           year="WIP"
           imageSrc="/sketchbook.png"
           imageAlt="/sketchbook.png"
@@ -80,7 +79,6 @@ function Projects() {
         <ProjectCard
           title="Game for Preferences Discovery"
           org="Google Summer of Code"
-          orgColor="text-amber-500"
           year="2016"
           imageSrc="/sketchbook.png"
           imageAlt="/sketchbook.png"
@@ -89,7 +87,6 @@ function Projects() {
         <ProjectCard
           title="Music Through the Pandemic"
           org="Data Visualisation Course"
-          orgColor="text-purple-500"
           year="2021"
           imageSrc="/sketchbook.png"
           imageAlt="/sketchbook.png"
@@ -98,7 +95,6 @@ function Projects() {
         <ProjectCard
           title="Component Library"
           org="Interaction Design Course"
-          orgColor="text-purple-500"
           year="2016"
           imageSrc="/sketchbook.png"
           imageAlt="/sketchbook.png"
@@ -107,7 +103,6 @@ function Projects() {
         <ProjectCard
           title="VR for Education"
           org="Final Year Project"
-          orgColor="text-purple-500"
           year="2016"
           imageSrc="/sketchbook.png"
           imageAlt="/sketchbook.png"
@@ -122,11 +117,11 @@ function Projects() {
 function About() {
   return (
     <>
-      <h2 className="mt-44 text-center md:text-left text-2xl md:text-4xl text-white font-serif">
+      <h2 className="mt-44 text-center xl:text-left text-2xl xl:text-4xl text-white font-serif">
         About
       </h2>
       <div className="w-full mt-6 flex flex-wrap flex-row justify-between">
-        <div className="text-white md:w-2/3">
+        <div className="text-white xl:w-2/3">
           ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum. Lorem ipsum Lorem ipsum Lorem
           ipsum. Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum.Lorem ipsum Lorem ipsum
           Lorem ipsum. Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum.Lorem ipsum Lorem
@@ -137,7 +132,7 @@ function About() {
           Lorem ipsum.Lorem ipsum Lorem ipsum Lorem ipsum.Lorem ipsum Lorem ipsum Lorem ipsum Lorem
           ipsum Lorem ipsum.Lorem ipsum Lorem ipsum Lorem ipsum.
         </div>
-        <div className="bg-neutral-900 rounded-2xl md:w-80 md:h-80"></div>
+        <div className="bg-neutral-900 rounded-2xl xl:w-80 xl:h-80"></div>
       </div>
     </>
   );
