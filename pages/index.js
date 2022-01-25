@@ -28,7 +28,7 @@ function HeroComponent() {
         <Image src="/logo.svg" alt="" width={60} height={60} />
       </div>
       <div className="w-full xl:w-1/2 mt-32 xl:mt-[22rem] ">
-        <h1 className="text-3xl text-center xl:text-left leading-9">
+        <h1 className="text-3xl leading-9 text-center xl:text-left">
           Hi, I am Sparsh, a{" "}
           <span className="font-bold underline decoration-4 underline-offset-4 decoration-[#ffd60A]">
             Product Designer
@@ -46,10 +46,10 @@ function HeroComponent() {
 
       <div className="w-full mt-20 xl:mt-0 xl:w-1/2">
         <div className="relative">
-          <div className="text-xl font-bold -rotate-[20deg] absolute z-10 top-20 left-5">
+          {/* Not needed replaced with image. <div className="text-sm sm:text-lg xl:text-xl font-bold -rotate-[20deg] absolute z-10 top-10 left-0 md:top-18 md:left-28 lg:top-24 lg:left-56 xl:top-20 xl:left-5">
             Ingredients for crafting delicious products.
-          </div>
-          <div className="w-2/3 m-auto xl:w-full image-wrapper">
+          </div> */}
+          <div className="w-full m-auto sm:w-2/3 xl:w-[86%] image-wrapper">
             <Image
               src="/jars.png"
               alt="two jars with containing design and tech tool icons"
