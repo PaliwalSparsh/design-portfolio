@@ -1,9 +1,8 @@
-import { useWindowSize } from "../utils/hooks";
 import Image from "next/image";
 
 function ProjectCard(props) {
   return (
-    <div className="w-full sm:w-1/2 xl:w-80 mt-12 sm:mh-8 xl:mr-16 inline-block">
+    <div className="w-full sm:w-[48%] xl:w-80 mt-12 sm:mh-8 xl:mr-16 inline-block">
       <div className="text-xl font-bold text-white">{props.title}</div>
       <div className="text-base">
         <span className="text-[#ffd60A]">{props.org}</span>
