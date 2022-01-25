@@ -22,10 +22,10 @@ function Container() {
 function HeroComponent() {
   return (
     <div className="w-full flex flex-wrap flex-row">
-      <div className="w-full mt-24">
+      <div className="w-full mt-6 xl:mt-24">
         <Image src="/logo.svg" alt="" width={60} height={60} />
       </div>
-      <div className="w-full xl:w-1/2 mt-20 xl:mt-[22rem] ">
+      <div className="w-full xl:w-1/2 mt-32 xl:mt-[22rem] ">
         <h1 className="text-center xl:text-left text-3xl leading-9">
           Hi, I am Sparsh, a{" "}
           <span className="font-bold underline decoration-4 underline-offset-4 decoration-[#ffd60A]">
@@ -67,7 +67,7 @@ function Projects() {
       <h2 className="pt-20 text-center xl:text-left text-2xl xl:text-3xl font-serif">
         🥘 Projects
       </h2>
-      <div className="w-full mt-12 flex flex-wrap flex-row">
+      <div className="w-full flex flex-wrap flex-row">
         <ProjectCard
           title="FormA11y"
           link="/"
@@ -95,7 +95,6 @@ function Projects() {
           imageAlt="An iPad with game window opened in it."
           description="A tool to help designers and developers create and share interactive prototypes."
         />
-        <div className="w-full mt-10"></div>
         <ProjectCard
           title="Component Library"
           link="/"
@@ -129,10 +128,10 @@ function About() {
         🙌 About me
       </h2>
       <div className="mt-12 flex flex-wrap flex-row ">
-        <div className="xl:w-1/5 image-wrapper">
+        <div className="w-full xl:w-1/5 image-wrapper">
           <Image src="/dp.png" alt="photo of me" layout="fill" className="image" />
         </div>
-        <div className="xl:w-4/5 xl:pl-12">
+        <div className="mt-8 xl:mt-0 xl:w-4/5 xl:pl-12">
           <div>
             For nearly 7 years, I have been designing and developing interfaces. Of these, I have
             spent about 2.5 years in the tech industry (healthcare and finance startups) where I
@@ -184,10 +183,7 @@ function About() {
           link="https://www.skillshare.com/classes/Hand-drawn-Feel-for-your-Vector-Artwork/1139803515"
         />
       </LinkContainer>
-      <LinkContainer
-        title="Did you like the work and want to have a chat? You can find me at these places"
-        iconLink="/contactIcon.svg"
-      >
+      <LinkContainer title="Would you like to have a chat?" iconLink="/contactIcon.svg">
         <LinkComponent title="Email" description="sparsh@umd.edu" link="" />
         <LinkComponent title="Phone" description="240.476.0453" link="" />
         <LinkComponent
@@ -203,23 +199,23 @@ function About() {
 
 function LinkComponent({ title, description, link, properties }) {
   return (
-    <div className="xl:w-4/12 xl:pt-6" style={properties}>
+    <div className="w-full mt-8 xl:mt-0 xl:w-4/12 xl:pt-6" style={properties}>
       <a href={link}>
-        <div className="text-xl font-bold hover:underline decoration-4 underline-offset-4 decoration-[#ffd60A]">
+        <div className="text-lg xl:text-xl font-bold hover:underline decoration-4 underline-offset-4 decoration-[#ffd60A]">
           {title}
         </div>
       </a>
-      <div className="mt-1 w-4/5">{description}</div>
+      <div className="w-full mt-1 xl:w-4/5">{description}</div>
     </div>
   );
 }
 
 function LinkContainer({ title, iconLink, children }) {
   return (
-    <div className="w-full bg-neutral-900 xl:p-8 xl:rounded-2xl xl:mt-14">
+    <div className="w-full bg-neutral-900 p-8 rounded-2xl mt-14">
       <div className="w-full text-xl font-bold mb-2 flex flex-wrap items-center">
         <Image src={iconLink} alt="" width={40} height={40} />
-        <span className="ml-4 align-middle">{title}</span>
+        <span className="w-full mt-4 xl:mt-0 xl:w-auto xl:ml-4 align-middle">{title}</span>
       </div>
       <div className="w-full flex flex-wrap flex-row justify-between">{children}</div>
     </div>
