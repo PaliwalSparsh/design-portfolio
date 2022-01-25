@@ -47,7 +47,7 @@ function Projects() {
       <h2 className="mt-44 text-center md:text-left text-2xl md:text-4xl text-white font-serif">
         Projects
       </h2>
-      <div className="w-full mt-6 flex flex-wrap flex-row justify-between md:justify-around lg:justify-between">
+      <div className="w-full mt-6 flex flex-wrap flex-row">
         <ProjectCard
           title="FormA11y"
           org="Adobe Research"

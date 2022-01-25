@@ -1,17 +1,34 @@
 import Link from "next/link";
 
+function ColorBar() {
+  return (
+    <div className="flex flex-wrap flex-row relative">
+      <div className="bg-red-500 w-1/6 h-12"></div>
+      <div className="bg-orange-500 w-1/6 h-12"></div>
+      <div className="bg-amber-500 w-1/6 h-12"></div>
+      <div className="bg-green-500 w-1/6 h-12"></div>
+      <div className="bg-blue-500 w-1/6 h-12"></div>
+      <div className="bg-purple-500 w-1/6 h-12"></div>
+      <div className="bg-black/5 w-full h-40 absolute backdrop-blur-2xl"></div>
+    </div>
+  );
+}
+
 function Header() {
   return (
-    <header className="w-full mt-28 flex flex-wrap flex-col items-center md:flex-row md:content-between">
-      <Link href="/">
-        <a className="mb-4 md:mb-0 text-2xl text-white font-bold">Sparsh Paliwal</a>
-      </Link>
-      <nav className="md:ml-auto flex flex-wrap items-center text-base justify-center text-gray-400">
-        <a className="mr-5 hover:text-white">Mains</a>
-        <a className="mr-5 hover:text-white">Sides</a>
-        <a className="hover:text-white">About</a>
-      </nav>
-    </header>
+    <>
+      <ColorBar />
+      <header className="w-full mt-28 flex flex-wrap flex-col items-center md:flex-row md:content-between">
+        <Link href="/">
+          <a className="mb-4 md:mb-0 text-2xl text-white font-bold">Sparsh Paliwal</a>
+        </Link>
+        <nav className="md:ml-auto flex flex-wrap items-center text-base justify-center text-gray-400">
+          <a className="mr-5 hover:text-white">Mains</a>
+          <a className="mr-5 hover:text-white">Sides</a>
+          <a className="hover:text-white">About</a>
+        </nav>
+      </header>
+    </>
   );
 }
 
