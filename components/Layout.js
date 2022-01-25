@@ -3,9 +3,9 @@ import Link from "next/link";
 function Header() {
   return (
     <>
-      {/* <header className="w-full mt-28 flex flex-wrap flex-col items-center md:flex-row md:content-between">
+      {/* <header className="flex flex-col flex-wrap items-center w-full mt-28 md:flex-row md:content-between">
         <Link href="/">
-          <a className="mb-4 md:mb-0 text-2xl text-white font-bold">Sparsh Paliwal</a>
+          <a className="mb-4 text-2xl font-bold text-white md:mb-0">Sparsh Paliwal</a>
         </Link>
       </header> */}
     </>

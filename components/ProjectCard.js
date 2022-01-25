@@ -11,13 +11,13 @@ function ProjectCard(props) {
 
       <a href={props.link}>
         <div className="mt-4 xl:w-80 h-80 flex bg-neutral-900 rounded-2xl hover:shadow-lg hover:rotate-[3deg]">
-          <div className="w-3/5 xl:w-4/5 m-auto image-wrapper" style={props.imageStyle || {}}>
+          <div className="w-3/5 m-auto xl:w-4/5 image-wrapper" style={props.imageStyle || {}}>
             <Image src={props.imageSrc} alt={props.imageAlt} layout="fill" className="image" />
           </div>
         </div>
       </a>
 
-      <div className="mt-2 xl:mt-4 text-base text-neutral-500 leading-5">{props.description}</div>
+      <div className="mt-2 text-base leading-5 xl:mt-4 text-neutral-500">{props.description}</div>
     </div>
   );
 }

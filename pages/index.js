@@ -7,12 +7,12 @@ function Container() {
   return (
     <>
       <div className="w-full bg-white">
-        <div className="max-w-7xl p-6 pt-0 xl:p-16 xl:pt-0 m-auto">
+        <div className="p-6 pt-0 m-auto max-w-7xl xl:p-16 xl:pt-0">
           <HeroComponent />
         </div>
       </div>
-      <div className="w-full bg-black m-auto text-white">
-        <div className="max-w-7xl p-6 pt-0 xl:p-16 xl:pt-0 m-auto">
+      <div className="w-full m-auto text-white bg-black">
+        <div className="p-6 pt-0 m-auto max-w-7xl xl:p-16 xl:pt-0">
           <Projects />
           <About />
         </div>
@@ -23,12 +23,12 @@ function Container() {
 
 function HeroComponent() {
   return (
-    <div className="w-full flex flex-wrap flex-row">
+    <div className="flex flex-row flex-wrap w-full">
       <div className="w-full mt-6 xl:mt-24">
         <Image src="/logo.svg" alt="" width={60} height={60} />
       </div>
       <div className="w-full xl:w-1/2 mt-32 xl:mt-[22rem] ">
-        <h1 className="text-center xl:text-left text-3xl leading-9">
+        <h1 className="text-3xl text-center xl:text-left leading-9">
           Hi, I am Sparsh, a{" "}
           <span className="font-bold underline decoration-4 underline-offset-4 decoration-[#ffd60A]">
             Product Designer
@@ -68,10 +68,10 @@ function Projects() {
   const isTablet = 640 <= width && width <= 1280;
   return (
     <>
-      <h2 className="pt-20 text-center sm:text-left text-2xl xl:text-3xl font-serif">
+      <h2 className="pt-20 font-serif text-2xl text-center sm:text-left xl:text-3xl">
         🥘 Projects
       </h2>
-      <div className="w-full flex flex-wrap flex-row sm:justify-between xl:justify-start">
+      <div className="flex flex-row flex-wrap w-full sm:justify-between xl:justify-start">
         <ProjectCard
           title="FormA11y"
           link="/"
@@ -128,10 +128,10 @@ function Projects() {
 function About() {
   return (
     <>
-      <h2 className="mt-24 text-center sm:text-left text-2xl sm:text-3xl font-serif">
+      <h2 className="mt-24 font-serif text-2xl text-center sm:text-left sm:text-3xl">
         🙌 About me
       </h2>
-      <div className="mt-12 flex flex-wrap flex-row ">
+      <div className="flex flex-row flex-wrap mt-12 ">
         <div className="w-full sm:w-2/6 xl:w-1/5 image-wrapper">
           <Image src="/dp.png" alt="photo of me" layout="fill" className="image" />
         </div>
@@ -216,12 +216,12 @@ function LinkComponent({ title, description, link, properties }) {
 
 function LinkContainer({ title, iconLink, children }) {
   return (
-    <div className="w-full bg-neutral-900 p-8 rounded-2xl mt-14">
-      <div className="w-full text-xl font-bold mb-2 flex flex-wrap items-center">
+    <div className="w-full p-8 bg-neutral-900 rounded-2xl mt-14">
+      <div className="flex flex-wrap items-center w-full mb-2 text-xl font-bold">
         <Image src={iconLink} alt="" width={40} height={40} />
-        <span className="w-full mt-4 xl:mt-0 xl:w-auto xl:ml-4 align-middle">{title}</span>
+        <span className="w-full mt-4 align-middle xl:mt-0 xl:w-auto xl:ml-4">{title}</span>
       </div>
-      <div className="w-full flex flex-wrap flex-row justify-between">{children}</div>
+      <div className="flex flex-row flex-wrap justify-between w-full">{children}</div>
     </div>
   );
 }
