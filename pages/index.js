@@ -209,7 +209,7 @@ function LinkComponent({ title, description, link, properties }) {
 function LinkContainer({ title, iconLink, children }) {
   return (
     <div className="w-full bg-neutral-900 xl:p-8 xl:rounded-2xl xl:mt-14">
-      <div className="w-full text-xl font-bold mb-2">
+      <div className="w-full text-xl font-bold mb-2 flex flex-wrap items-center">
         <Image src={iconLink} alt="" width={40} height={40} />
         <span className="ml-4 align-middle">{title}</span>
       </div>
