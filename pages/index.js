@@ -70,6 +70,7 @@ function Projects() {
       <div className="w-full mt-12 flex flex-wrap flex-row">
         <ProjectCard
           title="FormA11y"
+          link="/"
           org="Adobe Research"
           year="WIP"
           imageSrc="/formA11y.png"
@@ -78,6 +79,7 @@ function Projects() {
         />
         <ProjectCard
           title="Game for Preferences Discovery"
+          link="/"
           org="Google Summer of Code"
           year="2016"
           imageSrc="/discoveryCat.png"
@@ -86,6 +88,7 @@ function Projects() {
         />
         <ProjectCard
           title="Music Through the Pandemic"
+          link="/"
           org="Data Visualisation Course"
           year="2021"
           imageSrc="/musicPandemic.png"
@@ -95,6 +98,7 @@ function Projects() {
         <div className="w-full mt-10"></div>
         <ProjectCard
           title="Component Library"
+          link="/"
           org="Interaction Design Course"
           year="2016"
           imageStyle={{ width: "50%" }}
@@ -104,6 +108,7 @@ function Projects() {
         />
         <ProjectCard
           title="VR for Education"
+          link="/"
           org="Final Year Project"
           year="2016"
           imageStyle={{ width: "100%" }}
