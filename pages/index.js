@@ -92,10 +92,12 @@ function Projects() {
           imageAlt="An iPad with game window opened in it."
           description="A tool to help designers and developers create and share interactive prototypes."
         />
+        <div className="w-full mt-10"></div>
         <ProjectCard
           title="Component Library"
           org="Interaction Design Course"
           year="2016"
+          imageStyle={{ width: "50%" }}
           imageSrc="/studySpace.png"
           imageAlt="A phone with app opened in it."
           description="A tool to help designers and developers create and share interactive prototypes."
@@ -104,6 +106,7 @@ function Projects() {
           title="VR for Education"
           org="Final Year Project"
           year="2016"
+          imageStyle={{ width: "100%" }}
           imageSrc="/vr.png"
           imageAlt="Cardboard VR headset showing users MRI machine."
           description="A tool to help designers and developers create and share interactive prototypes."
