@@ -64,8 +64,6 @@ function HeroComponent() {
 }
 
 function Projects() {
-  const { width } = useWindowSize();
-  const isTablet = 640 <= width && width <= 1280;
   return (
     <>
       <h2 className="pt-20 font-serif text-2xl text-center sm:text-left xl:text-3xl">
@@ -74,7 +72,7 @@ function Projects() {
       <div className="flex flex-row flex-wrap w-full sm:justify-between xl:justify-start">
         <ProjectCard
           title="FormA11y"
-          link="/"
+          link="https://www.sparshpaliwal.in/form.html"
           org="Adobe Research"
           year="WIP"
           imageSrc="/formA11y.png"
@@ -83,7 +81,7 @@ function Projects() {
         />
         <ProjectCard
           title="Game for Preferences Discovery"
-          link="/"
+          link="https://www.sparshpaliwal.in/gsoc.html"
           org="Google Summer of Code"
           year="2016"
           imageSrc="/discoveryCat.png"
@@ -92,31 +90,28 @@ function Projects() {
         />
         <ProjectCard
           title="Music Through the Pandemic"
-          link="/"
+          link="https://www.sparshpaliwal.in/music.html"
           org="Data Visualisation Course"
           year="2021"
           imageSrc="/musicPandemic.png"
           imageAlt="An iPad with game window opened in it."
           description="A tool to help designers and developers create and share interactive prototypes."
         />
+        {/* Change title of Component Library with caution as it is present in ProjectCard as well. */}
         <ProjectCard
           title="Component Library"
-          link="/"
+          link="https://www.sparshpaliwal.in/study.html"
           org="Interaction Design Course"
           year="2016"
-          // imageStyle={isTablet ? { width: "35%" } : { width: "50%" }}
-          imageStyle={{width: "50%"}}
           imageSrc="/studySpace.png"
           imageAlt="A phone with app opened in it."
           description="A tool to help designers and developers create and share interactive prototypes."
         />
         <ProjectCard
           title="VR for Education"
-          link="/"
+          link="https://www.sparshpaliwal.in/vr.html"
           org="Final Year Project"
           year="2016"
-          // imageStyle={isTablet ? { width: "50%" } : { width: "100%" }}
-          imageStyle={{width: "100%"}}
           imageSrc="/vr.png"
           imageAlt="Cardboard VR headset showing users MRI machine."
           description="A tool to help designers and developers create and share interactive prototypes."
@@ -169,13 +164,18 @@ function About() {
           link="https://chrome.google.com/webstore/detail/fearch/kalmlbhhgndofalfencmggfncedfajgj?hl=en"
         />
         <LinkComponent
+          title="Talks at Meetups"
+          description="Delivered talks on testing and docker at Mumbai and Pune JS meetups."
+          link="https://www.sparshpaliwal.in/talks.html"
+        />
+        <LinkComponent
           title="Pogo Penguin"
-          description="Android game with unintuitive controls."
+          description="Android game with unintuitive controls which make it challenging."
           link="https://play.google.com/store/apps/details?id=com.discoman.pogopenguin&hl=en_IN&gl=US"
         />
         <LinkComponent
           title="Illustrations"
-          description="Stickers, illustrations and some 3D work."
+          description="Artwork including stickers, illustrations, logos and some 3D work."
           link="https://www.sparshpaliwal.in/artwork.html"
         />
         <LinkComponent
@@ -185,7 +185,7 @@ function About() {
         />
         <LinkComponent
           title="Skillshare Class"
-          description="Class taught on Hand-drawn Feel for Vector Artwork."
+          description="Online class published on Skillshare to teach an unique vector artwork effect."
           link="https://www.skillshare.com/classes/Hand-drawn-Feel-for-your-Vector-Artwork/1139803515"
         />
       </LinkContainer>
@@ -198,7 +198,7 @@ function About() {
           link=""
         />
       </LinkContainer>
-      <div></div>
+      <div className="mb-32"/>
     </>
   );
 }
