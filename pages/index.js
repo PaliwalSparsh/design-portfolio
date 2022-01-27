@@ -77,7 +77,7 @@ function Projects() {
           year="WIP"
           imageSrc="/formA11y.png"
           imageAlt="A laptop with tool window opened in it."
-          description="A tool to help designers and developers create and share interactive prototypes."
+          description="It is a tool that helps users to make PDF forms accessible using ML models."
         />
         <ProjectCard
           title="Game for Preferences Discovery"
@@ -86,7 +86,7 @@ function Projects() {
           year="2016"
           imageSrc="/discoveryCat.png"
           imageAlt="A laptop with game window opened in it."
-          description="A tool to help designers and developers create and share interactive prototypes."
+          description="A game to help users learn and try out different digital a11y feature."
         />
         <ProjectCard
           title="Music Through the Pandemic"
@@ -95,7 +95,7 @@ function Projects() {
           year="2021"
           imageSrc="/musicPandemic.png"
           imageAlt="An iPad with game window opened in it."
-          description="A tool to help designers and developers create and share interactive prototypes."
+          description="Visualizing – did the pandemic affect the kinds of music we listened to?"
         />
         {/* Change title of Component Library with caution as it is present in ProjectCard as well. */}
         <ProjectCard
@@ -104,8 +104,8 @@ function Projects() {
           org="Interaction Design Course"
           year="2016"
           imageSrc="/studySpace.png"
-          imageAlt="A phone with app opened in it."
-          description="A tool to help designers and developers create and share interactive prototypes."
+          imageAlt="Component library for an app that helps student find places to study."
+          description="."
         />
         <ProjectCard
           title="VR for Education"
@@ -114,7 +114,7 @@ function Projects() {
           year="2016"
           imageSrc="/vr.png"
           imageAlt="Cardboard VR headset showing users MRI machine."
-          description="A tool to help designers and developers create and share interactive prototypes."
+          description="VR application to help students learn about MRI in a simulated classroom."
         />
         <div className="h-1 w-80"></div>
       </div>
@@ -136,11 +136,11 @@ function About() {
           <div>
             For nearly 7 years, I have been designing and developing interfaces. Of these, I have
             spent about 2.5 years in the tech industry (healthcare and finance startups) where I
-            worked closely with web and mobile user interfaces. This was a I successfully shipped
-            applications both individually and while leading a team. I am heavily influenced by
-            Brett Victor’s work in the field of HCI. I believe having a strong grasp of technology,
-            helps a person to understand the possibilites and constraints of systems. This knowledge
-            is powerful and useful in delivering novel experiences.
+            worked closely with web and mobile user interfaces. During this time, I also
+            successfully shipped applications both individually and while leading a team. I am
+            heavily influenced by Brett Victor’s work in the field of HCI. I believe having a strong
+            grasp of technology, helps a person to understand the possibilities and constraints of
+            systems. This knowledge is powerful and useful in delivering novel experiences.
           </div>
           <div className="mt-4">
             While I am not working, you can find me playing guitar or reading books. Learning new
@@ -198,7 +198,7 @@ function About() {
           link=""
         />
       </LinkContainer>
-      <div className="mb-32"/>
+      <div className="mb-32" />
     </>
   );
 }
@@ -206,8 +206,11 @@ function About() {
 function LinkComponent({ title, description, link, properties }) {
   return (
     <div className="w-full mt-8 xl:mt-0 sm:w-6/12 xl:w-4/12 xl:pt-6" style={properties}>
-      <a href={link} className="text-lg xl:text-xl font-bold hover:underline decoration-4 underline-offset-4 decoration-[#ffd60A]">
-          {title}
+      <a
+        href={link}
+        className="text-lg xl:text-xl font-bold hover:underline decoration-4 underline-offset-4 decoration-[#ffd60A]"
+      >
+        {title}
       </a>
       <div className="w-full mt-1 sm:w-4/5">{description}</div>
     </div>
