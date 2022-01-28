@@ -77,7 +77,7 @@ function Projects() {
           year="WIP"
           imageSrc="/formA11y.png"
           imageAlt="A laptop with tool window opened in it."
-          description="It is a tool that helps users to make PDF forms accessible using ML models."
+          description="A tool that helps users to make PDF forms accessible leveraging ML models."
         />
         <ProjectCard
           title="Music Through the Pandemic"
@@ -86,17 +86,17 @@ function Projects() {
           year="2021"
           imageSrc="/musicPandemic.png"
           imageAlt="An iPad with game window opened in it."
-          description="Visualizing – did the pandemic affect the kinds of music we listened to?"
+          description="Visualizing – did pandemic affect the kinds of music people listen?"
         />
         {/* Change title of Component Library with caution as it is present in ProjectCard as well. */}
         <ProjectCard
-          title="Component Library"
+          title="Study Space"
           link="https://www.sparshpaliwal.in/study.html"
           org="Interaction Design Course"
           year="2021"
           imageSrc="/studySpace.png"
           imageAlt="A phone with an app opened in it."
-          description="Component library for an app that helps student find places to study."
+          description="Component library for an app that helps student discover places to study."
         />
         <ProjectCard
           title="VR for Education"
