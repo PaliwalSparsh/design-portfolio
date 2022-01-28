@@ -80,15 +80,6 @@ function Projects() {
           description="It is a tool that helps users to make PDF forms accessible using ML models."
         />
         <ProjectCard
-          title="Game for Preferences Discovery"
-          link="https://www.sparshpaliwal.in/gsoc.html"
-          org="Google Summer of Code"
-          year="2016"
-          imageSrc="/discoveryCat.png"
-          imageAlt="A laptop with game window opened in it."
-          description="A game to help users learn and try out different digital a11y feature."
-        />
-        <ProjectCard
           title="Music Through the Pandemic"
           link="https://www.sparshpaliwal.in/music.html"
           org="Data Visualisation Course"
@@ -115,6 +106,15 @@ function Projects() {
           imageSrc="/vr.png"
           imageAlt="Cardboard VR headset showing users MRI machine."
           description="VR application to help students learn about MRI in a simulated classroom."
+        />
+        <ProjectCard
+          title="Game for Preferences Discovery"
+          link="https://www.sparshpaliwal.in/gsoc.html"
+          org="Google Summer of Code"
+          year="2016"
+          imageSrc="/discoveryCat.png"
+          imageAlt="A laptop with game window opened in it."
+          description="A game to help users learn and try out different digital a11y feature."
         />
         <div className="h-1 w-80"></div>
       </div>
