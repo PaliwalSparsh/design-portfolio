@@ -104,8 +104,8 @@ function Projects() {
           org="Interaction Design Course"
           year="2016"
           imageSrc="/studySpace.png"
-          imageAlt="Component library for an app that helps student find places to study."
-          description="."
+          imageAlt="A phone with an app opened in it."
+          description="Component library for an app that helps student find places to study."
         />
         <ProjectCard
           title="VR for Education"
