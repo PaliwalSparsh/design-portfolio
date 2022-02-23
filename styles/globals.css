@@ -19,3 +19,17 @@ across browsers, component contains containers, grids etc. */
 .image-wrapper > span {
   position: unset !important;
 }
+
+.grid-lines {
+  background-color: transparent;
+  background-image: linear-gradient(
+    90deg,
+    transparent 74%,
+    rgba(167, 167, 167, 0.05) 75%,
+    rgba(167, 167, 167, 0.05) 76%,
+    transparent 77%,
+    transparent
+  );
+  height: 100%;
+  background-size: 100px 50px;
+}

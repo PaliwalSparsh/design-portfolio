@@ -14,7 +14,7 @@ function ProjectCard(props) {
       </div>
 
       <a href={props.link}>
-        <div className="mt-4 xl:w-80 h-80 flex bg-neutral-900 rounded-2xl hover:shadow-lg hover:rotate-[3deg]">
+        <div className="transition ease-in-out duration-100 mt-4 xl:w-80 h-80 flex bg-neutral-900 rounded-2xl hover:shadow-lg hover:rotate-[3deg]">
           <div
             className={clsx("m-auto image-wrapper", {
               "w-[65%] sm:w-1/2 xl:w-full": isVRProject,

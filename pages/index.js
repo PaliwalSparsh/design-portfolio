@@ -6,7 +6,7 @@ import ProjectCard from "../components/ProjectCard";
 function Container() {
   return (
     <>
-      <div className="w-full bg-white">
+      <div className="w-full bg-white grid-lines">
         <div className="p-6 pt-0 m-auto max-w-7xl xl:p-16 xl:pt-0">
           <HeroComponent />
         </div>
@@ -24,39 +24,32 @@ function Container() {
 function HeroComponent() {
   return (
     <div className="flex flex-row flex-wrap w-full">
-      <div className="w-full mt-6 xl:mt-24">
-        <Image src="/logo.svg" alt="" width={60} height={60} />
-      </div>
-      <div className="w-full xl:w-1/2 mt-32 xl:mt-[22rem] ">
-        <h1 className="text-3xl leading-9 text-center xl:text-left">
-          Hi, I am Sparsh, a{" "}
-          <span className="font-bold underline decoration-4 underline-offset-4 decoration-[#ffd60A]">
-            Product Designer
-          </span>{" "}
-          with <b>technical prowess.</b>
-        </h1>
-
-        <div className="mt-2 text-center xl:text-left">
-          Currently, a HCI Student at University of Maryland, College Park.
-        </div>
-        <div className="text-center xl:text-left text-neutral-500">
-          Previously, a Senior UI developer with 2.5 years of experience.
-        </div>
+      <div className="mx-auto mt-10 xl:mt-6 xl:w-full xl:mt-24">
+        <Image src="/logo.svg" alt="" width={48} height={48} />
       </div>
 
-      <div className="w-full mt-20 xl:mt-0 xl:w-1/2">
+      <div className="w-full mt-20 xl:mt-20 xl:w-1/3">
         <div className="relative">
-          {/* Not needed replaced with image. <div className="text-sm sm:text-lg xl:text-xl font-bold -rotate-[20deg] absolute z-10 top-10 left-0 md:top-18 md:left-28 lg:top-24 lg:left-56 xl:top-20 xl:left-5">
-            Ingredients for crafting delicious products.
-          </div> */}
-          <div className="w-full m-auto sm:w-2/3 xl:w-[86%] image-wrapper">
+          <div className="w-2/3 mx-auto sm:w-2/3 xl:w-full image-wrapper">
             <Image
-              src="/jars.png"
-              alt="two jars with containing design and tech tool icons"
+              src="/photo.png"
+              alt="photo of website author."
               layout="fill"
               className="image"
             />
           </div>
+        </div>
+      </div>
+
+      <div className="self-center w-full mt-8 xl:pl-28 xl:w-2/3 xl:mt-20">
+        <h1 className="text-4xl font-bold text-center xl:text-left">
+          Hi, I am Sparsh, a <span className="bg-[#ffd60A]"> Product Designer </span> with technical
+          prowess.
+        </h1>
+
+        <div className="mt-2 text-2xl font-bold text-center text-gray-500 xl:text-left">
+          Currently, a HCI Student at University of Maryland, College Park. Previously, a Senior UI
+          developer with 2.5 years of experience.
         </div>
       </div>
     </div>
@@ -66,8 +59,8 @@ function HeroComponent() {
 function Projects() {
   return (
     <>
-      <h2 className="pt-20 font-serif text-2xl text-center sm:text-left xl:text-3xl">
-        🥘 Projects
+      <h2 className="pt-20 mt-5 text-2xl font-bold text-center sm:text-left xl:text-3xl">
+        🥘 &nbsp;Projects
       </h2>
       <div className="flex flex-row flex-wrap w-full sm:justify-between xl:justify-start">
         <ProjectCard
@@ -98,7 +91,7 @@ function Projects() {
           imageAlt="A phone with an app opened in it."
           description="Component library for an app that helps student discover places to study."
         />
-        <ProjectCard
+        {/* <ProjectCard
           title="VR for Education"
           link="https://www.sparshpaliwal.in/vr.html"
           org="Final Year Project"
@@ -115,7 +108,7 @@ function Projects() {
           imageSrc="/discoveryCat.png"
           imageAlt="A laptop with game window opened in it."
           description="A game to help users learn and try out different digital a11y feature."
-        />
+        /> */}
         <div className="h-1 w-80"></div>
       </div>
     </>
@@ -125,14 +118,14 @@ function Projects() {
 function About() {
   return (
     <>
-      <h2 className="mt-24 font-serif text-2xl text-center sm:text-left sm:text-3xl">
-        🙌 About me
+      <h2 className="mt-24 text-2xl font-bold text-center sm:text-left sm:text-3xl">
+        🙌 &nbsp;About me
       </h2>
       <div className="flex flex-row flex-wrap mt-12 ">
-        <div className="w-full sm:w-2/6 xl:w-1/5 image-wrapper">
-          <Image src="/dp.png" alt="photo of me" layout="fill" className="image" />
+        <div className="w-full sm:w-2/6 xl:w-[25%] image-wrapper">
+          <Image src="/dp.png" alt="photo of me" layout="fill" className="rounded-lg image" />
         </div>
-        <div className="mt-8 sm:mt-0 sm:w-4/6 xl:w-4/5 sm:pl-12">
+        <div className="mt-8 sm:mt-0 sm:w-4/6 xl:w-[75%] sm:pl-12">
           <div>
             For nearly 7 years, I have been designing and developing interfaces. Of these, I have
             spent about 2.5 years in the tech industry (healthcare and finance startups) where I
@@ -190,28 +183,65 @@ function About() {
         />
       </LinkContainer>
       <LinkContainer title="Would you like to have a chat?" iconLink="/contactIcon.svg">
-        <LinkComponent title="Email" description="sparsh@umd.edu" link="" />
-        <LinkComponent title="Phone" description="240.476.0453" link="" />
-        <LinkComponent
-          title="Other Platforms"
-          description="Twitter, facebook, github, LinkedIn, Instagram."
-          link=""
-        />
+        <LinkComponent title="Email" description="sparsh@umd.edu" link="" interactive={false} />
+        <LinkComponent title="Phone" description="240.476.0453" link="" interactive={false} />
+        <SocialMediaLinkComponent />
       </LinkContainer>
       <div className="mb-32" />
     </>
   );
 }
 
-function LinkComponent({ title, description, link, properties }) {
+function SocialMediaLinkComponent() {
   return (
-    <div className="w-full mt-8 xl:mt-0 sm:w-6/12 xl:w-4/12 xl:pt-6" style={properties}>
-      <a
-        href={link}
-        className="text-lg xl:text-xl font-bold hover:underline decoration-4 underline-offset-4 decoration-[#ffd60A]"
-      >
-        {title}
-      </a>
+    <div className="w-full mt-8 xl:mt-0 sm:w-6/12 xl:w-4/12 xl:pt-6">
+      <span className="text-lg font-bold xl:text-xl">Other Platforms</span>
+      <div className="w-full mt-1 sm:w-4/5">
+        <a
+          href="https://twitter.com/paliwalsparsh"
+          className="hover:underline hover:decoration-3 hover:decoration-[#ffd60A]"
+        >
+          Twitter
+        </a>
+        ,&nbsp;
+        <a
+          href="https://github.com/PaliwalSparsh"
+          className="hover:underline hover:decoration-2 hover:decoration-[#ffd60A]"
+        >
+          Github
+        </a>
+        ,&nbsp;
+        <a
+          href="https://www.linkedin.com/in/sparsh-paliwal/"
+          className="hover:underline hover:decoration-2 hover:decoration-[#ffd60A]"
+        >
+          LinkedIn
+        </a>
+        ,&nbsp;
+        <a
+          href="https://www.instagram.com/_discoman/"
+          className="hover:underline hover:decoration-2 hover:decoration-[#ffd60A]"
+        >
+          Instagram.
+        </a>
+      </div>
+    </div>
+  );
+}
+
+function LinkComponent({ title, description, link, interactive = true }) {
+  return (
+    <div className="w-full mt-8 xl:mt-0 sm:w-6/12 xl:w-4/12 xl:pt-6">
+      {interactive ? (
+        <a
+          href={link}
+          className="text-lg xl:text-xl font-bold hover:underline hover:decoration-4 hover:underline-offset-4 hover:decoration-[#ffd60A]"
+        >
+          {title}
+        </a>
+      ) : (
+        <span className="text-lg font-bold xl:text-xl">{title}</span>
+      )}
       <div className="w-full mt-1 sm:w-4/5">{description}</div>
     </div>
   );
