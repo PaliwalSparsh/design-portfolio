@@ -14,7 +14,7 @@ function ProjectCard(props) {
       </div>
 
       <a href={props.link}>
-        <div className="transition ease-in-out duration-100 mt-4 xl:w-80 h-80 flex bg-neutral-900 rounded-2xl hover:shadow-lg hover:rotate-[3deg]">
+        <div className="transition ease-in-out duration-100 mt-4 xl:w-80 h-80 flex bg-neutral-900 rounded-2xl shadow-2xl hover:rotate-[3deg]">
           <div
             className={clsx("m-auto image-wrapper", {
               "w-[65%] sm:w-1/2 xl:w-full": isVRProject,
@@ -27,7 +27,7 @@ function ProjectCard(props) {
         </div>
       </a>
 
-      <div className="mt-2 text-base leading-5 xl:mt-4 text-neutral-500">{props.description}</div>
+      <div className="mt-2 text-base leading-5 text-neutral-500 xl:mt-4">{props.description}</div>
     </div>
   );
 }

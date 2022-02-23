@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { useWindowSize } from "../utils/hooks";
 
 import ProjectCard from "../components/ProjectCard";
@@ -11,7 +10,7 @@ function Container() {
           <HeroComponent />
         </div>
       </div>
-      <div className="w-full m-auto text-white bg-black">
+      <div className="w-full m-auto text-white bg-[#0E0E0E]">
         <div className="p-6 pt-0 m-auto max-w-7xl xl:p-16 xl:pt-0">
           <Projects />
           <About />
@@ -24,7 +23,7 @@ function Container() {
 function HeroComponent() {
   return (
     <div className="flex flex-row flex-wrap w-full">
-      <div className="mx-auto mt-10 xl:mt-6 xl:w-full xl:mt-24">
+      <div className="mx-auto mt-10 xl:mt-11 xl:w-full xl:mt-24">
         <Image src="/logo.svg" alt="" width={48} height={48} />
       </div>
 
@@ -59,7 +58,7 @@ function HeroComponent() {
 function Projects() {
   return (
     <>
-      <h2 className="pt-20 mt-5 text-2xl font-bold text-center sm:text-left xl:text-3xl">
+      <h2 className="pt-24 mt-5 text-2xl font-bold text-center sm:text-left xl:text-3xl">
         🥘 &nbsp;Projects
       </h2>
       <div className="flex flex-row flex-wrap w-full sm:justify-between xl:justify-start">
@@ -82,7 +81,7 @@ function Projects() {
           description="Visualizing – did pandemic affect the kinds of music people listen?"
         />
         {/* Change title of Component Library with caution as it is present in ProjectCard as well. */}
-        <ProjectCard
+        {/* <ProjectCard
           title="Study Space"
           link="https://www.sparshpaliwal.in/study.html"
           org="Interaction Design Course"
@@ -90,7 +89,7 @@ function Projects() {
           imageSrc="/studySpace.png"
           imageAlt="A phone with an app opened in it."
           description="Component library for an app that helps student discover places to study."
-        />
+        /> */}
         {/* <ProjectCard
           title="VR for Education"
           link="https://www.sparshpaliwal.in/vr.html"
@@ -99,7 +98,7 @@ function Projects() {
           imageSrc="/vr.png"
           imageAlt="Cardboard VR headset showing users MRI machine."
           description="VR application to help students learn about MRI in a simulated classroom."
-        />
+        />*/}
         <ProjectCard
           title="Game for Preferences Discovery"
           link="https://www.sparshpaliwal.in/gsoc.html"
@@ -108,7 +107,7 @@ function Projects() {
           imageSrc="/discoveryCat.png"
           imageAlt="A laptop with game window opened in it."
           description="A game to help users learn and try out different digital a11y feature."
-        /> */}
+        />
         <div className="h-1 w-80"></div>
       </div>
     </>
